@@ -10,8 +10,8 @@ package:
 source:
   fn: TTR_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/TTR_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/TTR/TTR_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/TTR_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/TTR/TTR_{{ version }}.tar.gz
   sha256: 1a1fc1d2361d58d573d6ec645633521840d3f606406314a992967e8c17c75436
 
 
