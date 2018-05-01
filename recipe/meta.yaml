@@ -1,4 +1,4 @@
-{% set version = '0.23-2' %}
+{% set version = '0.23-3' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,18 +12,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TTR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TTR/TTR_{{ version }}.tar.gz
-  sha256: 1a1fc1d2361d58d573d6ec645633521840d3f606406314a992967e8c17c75436
-
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
+  sha256: 2136032c7a2cd2a82518a4412fc655ecb16597b123dbdebe5684caef9f15261f
 
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -81,8 +75,8 @@ extra:
 # Package: TTR
 # Type: Package
 # Title: Technical Trading Rules
-# Version: 0.23-2
-# Date: 2017-07-07
+# Version: 0.23-3
+# Date: 2018-01-24
 # Author: Joshua Ulrich
 # Maintainer: Joshua Ulrich <josh.m.ulrich@gmail.com>
 # Imports: xts (>= 0.10-0), zoo, curl
@@ -93,11 +87,10 @@ extra:
 # License: GPL-2
 # URL: https://github.com/joshuaulrich/TTR
 # BugReports: https://github.com/joshuaulrich/TTR/issues
-# RoxygenNote: 6.0.1
 # NeedsCompilation: yes
-# Packaged: 2017-07-10 17:18:49 UTC; josh
+# Packaged: 2018-01-24 12:07:00 UTC; josh
 # Repository: CRAN
-# Date/Publication: 2017-07-11 05:34:20 UTC
+# Date/Publication: 2018-01-24 12:54:18 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
